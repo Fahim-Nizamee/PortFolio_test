@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- HTML code starts-->
+<html>
+    <head><title>OOP exam</title></head>
+<body>
+
+    <form name="form_c211080">
+    <p><b>Question 1. What does encapsulation mean is OOP concept?</b></p>
+    <input type="radio" name="q1" value="Bind"> Binding data and function. <br>
+    <input type="radio" name="q1" value="funtions"> A bunch of functions. <br>
+    <input type="radio" name="q1" value="class"> Binding of classes. <br>
+    <input type="radio" name="q1" value="None"> None of the above. <br><br>
+    <p><b>Question 2. What is the keyword of structure data type in C language?</b></p>
+    <input type="radio" name="q2" value="class"> class. <br>
+    <input type="radio" name="q2" value="structure"> structure. <br>
+    <input type="radio" name="q2" value="struct"> struct. <br>
+    <input type="radio" name="q2" value="string"> string. <br><br>
+    <p><b>Question 3. Why does inheritence use in C Plus Plus?</b></p>
+    <input type="radio" name="q3" value="Beautify the code"> Beautify the code <br>
+    <input type="radio" name="q3" value="reuseability"> For reuseabilty <br>
+    <input type="radio" name="q3" value="Basic structure of cpp"> Basic structure of cpp <br>
+    <input type="radio" name="q3" value="None of the above"> None of the above <br><br>
+    <p><b>Question 4. Why does operator overlading use in OOP?</b></p>
+    <input type="radio" name="q4" value="A"> To make the code user friendly. <br>
+    <input type="radio" name="q4" value="B"> To define the operator's behavior for specific code. <br>
+    <input type="radio" name="q4" value="C"> To make the code easier. <br>
+    <input type="radio" name="q4" value="D"> To use one operator for multiple mathematical purpose. <br><br>
+    <p><b>Question 5. In which concept the keyword 'virtual' used in in C Plus Plus?</b></p>
+    <input type="radio" name="q5" value="A"> Inheritence. <br>
+    <input type="radio" name="q5" value="B"> Polymorphism. <br>
+    <input type="radio" name="q5" value="C"> Encapsulation. <br>
+    <input type="radio" name="q5" value="D"> Stream. <br><br>
+    <p><b>Question 6. Which of the following language is not case sensitive?</b></p>
+    <input type="radio" name="q6" value="A"> C Plus Plus. <br>
+    <input type="radio" name="q6" value="B"> HTML. <br>
+    <input type="radio" name="q6" value="C"> Javascript. <br>
+    <input type="radio" name="q6" value="D"> C. <br><br>
+    <p><b>Question 7. A class in OOP is consist of...</b></p>
+    <input type="radio" name="q7" value="A"> Multiple Data type. <br>
+    <input type="radio" name="q7" value="B"> Functions. <br>
+    <input type="radio" name="q7" value="C"> Instance variables. <br>
+    <input type="radio" name="q7" value="D"> All of the above. <br><br>
+    <p><b>Question 8. Select the structure of an infinity loop...</b></p>
+    <input type="radio" name="q8" value="A"> while(6) <br>
+    <input type="radio" name="q8" value="B"> while(true) <br>
+    <input type="radio" name="q8" value="C"> for(int i=0;i>=0;i++) <br>
+    <input type="radio" name="q8" value="D"> All of the above. <br><br>
+    <p><b>Question 9. What is the use of scope resolution (::) operator in C Plus Plus?</b></p>
+    <input type="radio" name="q9" value="A"> To access an instance variable. <br>
+    <input type="radio" name="q9" value="B"> To access a class's member function. <br>
+    <input type="radio" name="q9" value="C"> To specify an object. <br>
+    <input type="radio" name="q9" value="D"> None of the above. <br><br>
+    <p><b>Question 10. Which of the following is called when an object is created in C Plus Plus?</b></p>
+    <input type="radio" name="q10" value="A"> Destructor. <br>
+    <input type="radio" name="q10" value="B"> Constructor. <br>
+    <input type="radio" name="q10" value="C"> Member function. <br>
+    <input type="radio" name="q10" value="D"> None of the above. <br><br>
+
+    <br> <p  align = "center"> <input  type="submit" value="Submit" style="width: 100px; height: 50px;" onclick="check()"> </p>
+</form>
+<script>
+    function check()    {
+    var q1= document.form_c211080.q1.value;
+    var q2= document.form_c211080.q2.value;
+    var q3= document.form_c211080.q3.value;
+    var q4= document.form_c211080.q4.value;
+    var q5= document.form_c211080.q5.value;
+    var q6= document.form_c211080.q6.value;
+    var q7= document.form_c211080.q7.value;
+    var q8= document.form_c211080.q8.value;
+    var q9= document.form_c211080.q9.value;
+    var q10= document.form_c211080.q10.value;
+    var count=0;
+    var total_quesion = 10;
+    if(q1=="Bind")    count++;
+    else alert("Your answer of first question is wrong. The answer is 'Binding data and function.'");
+    if(q2=="struct")  count++;
+    else alert("Your answer of second question is wrong. The answer is 'structure.'");
+    if(q3=="reuseability")    count++;
+    else alert("Your answer of third question is wrong. The answer is 'For reuseabilty.'");
+    if(q4=="B") count++;
+    else alert("Your answer of fourth question is wrong. The answer is 'To define the operator's behavior for specific code.'");
+    if(q5=="A") count++;
+    else alert("Your answer of fifth question is wrong. The answer is 'Inheritence.'");
+    if(q6=="B") count++;
+    if(q8=="D") count++;
+    else alert("Your answer of eighth question is wrong. The answer is 'All of the above.'");
+    if(q9=="B") count++;
+    else alert("Your answer of Nineth question is wrong. The answer is 'To access a class's member function.'");
+    if(q10=="B") count++;
+    else alert("Your answer of tenth question is wrong. The answer is 'Constructor.'");
+
+    alert("Your total mark is "+count+" out of "+total_quesion+".");
+    }
+</script>
+</body>
+</html>
