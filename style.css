@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Explora&family=Gravitas+One&family=Josefin+Sans&family=Lora&family=Source+Sans+Pro:wght@300&display=swap');
 
 header {
-    /* background-color:rgb(14, 1, 1); */
     color: rgb(190, 190, 190);
     display: flex;
     justify-content: space-between;
@@ -29,18 +28,9 @@ header nav a {
     padding: 1em;
 }
 
-.bg-pic {
-    height: 50vh;
-    width: 100%;
-    background-image: url(-img/pic\ 3.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
 .bg-pic1 {
     height: 50vh;
     width: 100%;
-    /* background-image: url(img/pic\ 6.jpg); */
     background-size: cover;
     background-position: center;
 }
@@ -58,7 +48,6 @@ header nav a {
 
 .crd {
     display: flex;
-    /* align-items: center; */
     padding: 2em;
     column-gap: 4em;
     justify-content: center;
@@ -66,7 +55,6 @@ header nav a {
 
 .crd2 {
     display: flex;
-    /* align-items: center; */
     padding: 2em;
     column-gap: 3cm;
     justify-content: center;
@@ -82,6 +70,7 @@ header nav a {
     border-top: 1px solid rgba(225, 213, 213, 0.5);
     border-left: 1px solid rgba(225, 213, 213, 0.5);
     backdrop-filter: blur(3px);
+    overflow: hidden;
 }
 
 .bl2 {
@@ -94,5 +83,13 @@ header nav a {
     border-top: 1px solid rgba(225, 213, 213, 0.5);
     border-left: 1px solid rgba(225, 213, 213, 0.5);
     backdrop-filter: blur(3px);
+    overflow: hidden;
 
+}
+.hover01 figure img {
+	transform: scale(1);
+	transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+	transform: scale(1.3);
 }
