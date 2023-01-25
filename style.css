@@ -16,6 +16,9 @@ header nav a {
     margin-left: 2rem;
 }
 
+header p:hover{
+    filter:brightness(100);
+}
 .bg {
     background: url(img/pic\ 12.jpg) fixed center;
     background-size: cover;
